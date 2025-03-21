@@ -18,7 +18,7 @@ export default function Project() {
     }
   ]
   return (
-    <section className='flex flex-col sm:p-12 px-4 py-12'>
+    <section className='flex flex-col sm:p-12 px-4 py-12 dark:text-[#C9D1D9]'>
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

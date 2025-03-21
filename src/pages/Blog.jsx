@@ -15,7 +15,7 @@ export default function Blog() {
         className="text-center mb-12"
       >
         <h1 className="text-4xl font-bold text-blue-400">My Blog</h1>
-        <p className="text-lg text-gray-600 mt-2">Sharing knowledge and insights on web development.</p>
+        <p className="text-lg text-gray-600 mt-2 dark:text-[#C9D1D9]">Sharing knowledge and insights on web development.</p>
       </motion.div>
 
       {/* Blog Grid */}
@@ -26,13 +26,13 @@ export default function Blog() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.2, duration: 0.5 }}
-            className="card card-side bg-base-100 shadow-sm">
+            className="card card-side bg-base-100 shadow-sm dark:bg-[#161B22] dark:text-[#C9D1D9]">
             <div className="card-body">
               <h2 className="card-title mb-4">{blog.title}</h2>
               <p>{blog.description}</p>
               <div className="card-actions justify-end mt-4 items-center">
-                <p className="text-xs text-gray-500">{blog.date}</p>
-                <Link to={`/blog/${blog.id}`} className="btn bg-blue-500 text-neutral-100 hover:bg-blue-600">Read More</Link>
+                <p className="text-xs text-gray-500 dark:text-[#8B949E]">{blog.date}</p>
+                <Link to={`/blog/${blog.id}`} className="btn btn-soft bg-blue-500 text-neutral-100 hover:bg-blue-600">Read More</Link>
               </div>
             </div>
           </motion.div>

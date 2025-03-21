@@ -4,7 +4,7 @@ import myImage from '../assets/image.jpeg'
 
 export default function Home() {
   return (
-    <section className="h-screen flex flex-col justify-center items-center text-center  text-gray-900 px-6">
+    <section className="h-screen  dark:text-[#C9D1D9] flex flex-col justify-center items-center text-center  text-gray-900 px-6">
       <motion.div
         className="w-64 h-64 rounded-full bg-amber-400 overflow-hidden mb-4"
         initial={{ opacity: 0, y: -30 }}
@@ -25,7 +25,7 @@ export default function Home() {
 
       {/* Subtext */}
       <motion.p
-        className="text-md md:text-xl text-gray-900 mb-6"
+        className="text-md md:text-xl text-gray-900 dark:text-[#8B949E] mb-6"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.8 }}

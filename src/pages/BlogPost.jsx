@@ -21,7 +21,7 @@ export default function BlogPost() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true }}
-                className='text-3xl font-bold mt-10 sm:mt-5 mb-10'>{blog.title}</motion.h1>
+                className='text-3xl font-bold mt-10 sm:mt-5 mb-10 dark:text-[#C9D1D9]'>{blog.title}</motion.h1>
             <div>
                 {blog.content.map((item, index) =>
                     item.type === "text" ? (
@@ -30,7 +30,7 @@ export default function BlogPost() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.4 }}
                             viewport={{ once: true }}
-                            key={index} className='mb-4 font-light tracking-wide leading-relaxed '>{item.value}</motion.p>
+                            key={index} className='mb-4 font-light tracking-wide leading-relaxed dark:text-[#C9D1D9] '>{item.value}</motion.p>
                     )
                         : (
                             <motion.div

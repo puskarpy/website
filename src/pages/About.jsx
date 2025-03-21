@@ -21,13 +21,13 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
           className="text-5xl font-bold mb-8 text-blue-400">About me</motion.h1>
-        <div className="flex flex-col-reverse gap-4 sm:flex-row sm:justify-between sm:px-6">
-          <div className="sm:max-w-10/15 text-md sm:text-lg">
+        <div className="flex  flex-col-reverse gap-4 sm:flex-row sm:justify-between sm:px-6">
+          <div className="sm:max-w-10/15 text-md sm:text-lg ">
             <motion.p
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="text-sm sm:text-lg text-gray-700 leading-relaxed">
+              className="text-sm sm:text-lg text-gray-700 dark:text-[#C9D1D9] leading-relaxed">
               Hey! I'm Pushkar Niraula, a Computer Engineering student at Lalitpur Engineering College, currently in my third semester (second year).
               I have a deep interest in software development and web technologies, constantly exploring new frameworks and tools to improve my skills.
             </motion.p>
@@ -36,7 +36,7 @@ export default function About() {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.5 }}
-              className="mt-4 text-sm sm:text-lg text-gray-700 leading-relaxed">
+              className="mt-4 text-sm sm:text-lg text-gray-700 dark:text-[#C9D1D9] leading-relaxed">
               Ever since I started coding, I've been fascinated by how technology can turn ideas into reality. Whether it's building interactive web applications,
               experimenting with artificial intelligence, or optimizing backend systems, I love solving challenges through code.
             </motion.p>
@@ -45,7 +45,7 @@ export default function About() {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.5 }}
-              className="mt-4 text-sm sm:text-lg text-gray-700 leading-relaxed">
+              className="mt-4 text-sm sm:text-lg text-gray-700 dark:text-[#C9D1D9] leading-relaxed">
               Beyond coding, I enjoy listening to music, capturing pictures, playing football, and gaming. I believe that continuous learning and creativity
               are key to innovation, and I’m always eager to explore new possibilities in the tech world.
             </motion.p>
@@ -54,7 +54,7 @@ export default function About() {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.5 }}
-              className="mt-4 text-sm sm:text-lg text-gray-700 leading-relaxed">
+              className="mt-4 text-sm sm:text-lg text-gray-700 dark:text-[#C9D1D9] leading-relaxed">
               My goal is to become a skilled full-stack developer and work on impactful projects. I’m always open to collaboration and excited about
               opportunities that push me to grow.
             </motion.p>
@@ -75,14 +75,14 @@ export default function About() {
           {skills.map((skill, index) => (
             <motion.div
               key={index}
-              className="bg-neutral-200 p-4 rounded-lg shadow-lg"
+              className="bg-neutral-200 dark:bg-[#161B22] p-4 rounded-lg shadow-lg"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <h4 className="font-semibold">{skill.name}</h4>
-              <p className="text-sm text-gray-600">{skill.desc}</p>
+              <h4 className="font-semibold dark:text-[#C9D1D9]">{skill.name}</h4>
+              <p className="text-sm text-gray-600 dark:text-[#8B949E]">{skill.desc}</p>
             </motion.div>
           ))}
         </div>
