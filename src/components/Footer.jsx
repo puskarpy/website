@@ -1,24 +1,64 @@
-import React from 'react'
-import Icons from './Icons'
-import { Facebook } from 'lucide-react'
-import { Github } from 'lucide-react'
-import { Linkedin } from 'lucide-react'
-import { Instagram } from 'lucide-react'
+import { Github, ExternalLink, Mail, Linkedin, Twitter, ArrowRight, Code, Palette, Zap, Users, ChevronDown } from 'lucide-react';
 
 export default function Footer() {
-  return (
-    <footer className='border-t-[1px] border-gray-300 dark:border-[#30363D] dark:text-[#C9D1D9] mt-12 sm:mb-4 mb-18 flex flex-col gap-12 items-center p-4'>
-      <div className='flex flex-col items-center gap-4'>
-        <h2 className='font-semibold text-2xl text-blue-400'>Pushkar Niraula</h2>
-        <p>copyright @2025. All rights reserved.</p>
-      </div>
-      <div className='flex gap-6 sm:gap-8'>
-        <Icons link={'#'} child={<Facebook size={30} />} />
-        <Icons link={'#'} child={<Instagram size={30} />} />
-        <Icons link={'#'} child={<Github size={30} />} />
-        <Icons link={'#'} child={<Linkedin size={30} />} />
+return (
+    <footer id="contact" className="bg-black/30 backdrop-blur-sm border-t border-white/10 py-16">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Let's Work Together
+          </h2>
+          <p className="text-lg text-gray-400 mb-8">
+            Have a project in mind? I'd love to help bring your ideas to life.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <a
+              href="mailto:john@example.com"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 inline-flex items-center justify-center gap-2"
+            >
+              <Mail className="w-5 h-5" />
+              Get In Touch
+            </a>
+            <a
+              href="tel:+1234567890"
+              className="border-2 border-white/30 text-white px-8 py-4 rounded-full font-medium hover:bg-white/10 transition-all duration-300 hover:border-white/50"
+            >
+              +1 (234) 567-8900
+            </a>
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="text-2xl font-bold text-white mb-4 md:mb-0">
+            Portfolio
+          </div>
+
+          <div className="flex gap-6 mb-4 md:mb-0">
+            {[
+              { icon: Github, href: '#', label: 'GitHub' },
+              { icon: Linkedin, href: '#', label: 'LinkedIn' },
+              { icon: Twitter, href: '#', label: 'Twitter' },
+              { icon: Mail, href: '#', label: 'Email' }
+            ].map(({ icon: Icon, href, label }) => (
+              <a
+                key={label}
+                href={href}
+                className="text-gray-400 hover:text-white transition-colors duration-300 p-2 hover:scale-110 transform"
+                aria-label={label}
+              >
+                <Icon className="w-5 h-5" />
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div className="border-t border-white/10 mt-8 pt-8 text-center">
+          <p className="text-gray-400">
+            © 2024 John Doe. All rights reserved. Built with React & Tailwind CSS.
+          </p>
+        </div>
       </div>
     </footer>
-
-  )
+  );
 }

@@ -1,0 +1,49 @@
+{
+  "autoPlay": true,
+  "background": {
+    "color": { "value": "transparent" },
+    "opacity": 1
+  },
+  "backgroundMask": {
+    "composite": "destination-out",
+    "cover": { "color": { "value": "" }, "opacity": 1 },
+    "enable": false
+  },
+  "fullScreen": {
+    "enable": true,
+    "zIndex": 1
+  },
+  "fpsLimit": 120,
+  "detectRetina": true,
+  "interactivity": {
+    "events": {
+      "onHover": { "enable": false, "mode": [] },
+      "onClick": { "enable": false, "mode": [] }
+    },
+    "modes": {
+      "bubble": { "distance": 200, "duration": 0.4 },
+      "repulse": { "distance": 200, "duration": 0.4 }
+    }
+  },
+  "particles": {
+    "number": {
+      "value": 200,
+      "density": { "enable": true, "width": 1920, "height": 1080 }
+    },
+    "color": { "value": "#fff" },
+    "opacity": { "value": 1 },
+    "shape": { "type": "circle" },
+    "size": { "value": 2 },
+    "move": {
+      "enable": true,
+      "direction": "bottom",
+      "speed": 2,
+      "outModes": { "default": "out" },
+      "straight": true
+    }
+  },
+  "pauseOnBlur": true,
+  "pauseOnOutsideViewport": true,
+  "zLayers": 100,
+  "name": "Snow"
+}
