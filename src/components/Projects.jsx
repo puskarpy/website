@@ -1,6 +1,7 @@
 import React from 'react'
 import { projects } from '../data/projects.js';
 import {Github, ExternalLink} from 'lucide-react'
+import {motion} from 'motion/react'
 
 export default function Projects() {
 return (
@@ -16,8 +17,16 @@ return (
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <div
+          {projects.map((project, index) => (
+            <motion.div
+                initial={{ opacity: 0, y: 60 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{
+                                        duration: 0.6,
+                                        delay: index * 0.1,
+                                        ease: [0.25, 0.46, 0.45, 0.94]
+                                    }}
+                                    viewport={{ once: true }}
               key={project.id}
               className="group bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-500 hover:transform hover:scale-105"
             >
@@ -67,7 +76,7 @@ return (
                   </a>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

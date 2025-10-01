@@ -21,9 +21,9 @@ export const projects = [
       id: 3,
       title: "Portfolio Website",
       description: "A stunning portfolio website with interactive animations, smooth scrolling, and responsive design. Built with modern web technologies.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
+      image: "/portfolio.png",
       tags: ["React", "Three.js", "GSAP", "Tailwind CSS"],
-      github: "https://github.com",
+      github: "https://github.com/puskarpy/website",
       demo: "https://demo.com"
     },
     {

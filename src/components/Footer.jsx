@@ -14,17 +14,11 @@ return (
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <a
-              href="mailto:john@example.com"
+              href="mailto:puskarniraula01@gmail.com"
               className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 inline-flex items-center justify-center gap-2"
             >
               <Mail className="w-5 h-5" />
               Get In Touch
-            </a>
-            <a
-              href="tel:+1234567890"
-              className="border-2 border-white/30 text-white px-8 py-4 rounded-full font-medium hover:bg-white/10 transition-all duration-300 hover:border-white/50"
-            >
-              +1 (234) 567-8900
             </a>
           </div>
         </div>
@@ -55,7 +49,7 @@ return (
 
         <div className="border-t border-white/10 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 John Doe. All rights reserved. Built with React & Tailwind CSS.
+            © 2024 Pushkar Niraula. All rights reserved. Built with React & Tailwind CSS.
           </p>
         </div>
       </div>
